@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win10.adsmanager.stage2_activity"
+    android:orientation="vertical"
+    android:layout_margin="40dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Prefered Target Audience Profile"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/gender_array"
+        android:id="@+id/gender_selected_id"></Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age Group"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From:"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/age_min_id"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/age_max_id"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What online marketing strategies have you tried/tested?"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Have you tried a Referral Campaign/Program (Referal Marketing)"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/yesno_array"
+        android:id="@+id/ref_camp_id"></Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is an avg. conversion rate in your business?"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/avg_conversion_rate_id"/>
+    <Button
+        android:layout_margin="5dp"
+        android:textSize="17dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#0707ef"
+        android:textColor="@android:color/white"
+        android:text="Next"
+        android:onClick="nextButton"
+        android:textStyle="bold"
+        android:layout_gravity="right"/>
+    <Button
+        android:layout_margin="5dp"
+        android:textSize="17dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#0707ef"
+        android:textColor="@android:color/white"
+        android:text="Back"
+        android:onClick="backButton"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.win10.adsmanager.MainActivity"
+    android:layout_margin="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/session_id"
+        android:layout_gravity="left"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What business are you into?"
+        android:textSize="17dp"
+        android:layout_margin="10dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/bussiness_array"
+        android:textSize="17dp"
+        android:layout_margin="10dp"
+        android:id="@+id/bussiness_type_id">
+    </Spinner>
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Target/Business Locations"
+        android:textSize="17dp"
+        />
+    <EditText
+        android:id="@+id/bussiness_loc_id"
+        android:layout_margin="10dp"
+        android:textSize="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Website"
+        />
+    <EditText
+        android:id="@+id/website_id"
+        android:layout_margin="10dp"
+        android:textSize="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:layout_margin="10dp"
+        android:textSize="17dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#0707ef"
+        android:textColor="@android:color/white"
+        android:text="Next"
+        android:onClick="nextButton"
+        android:textStyle="bold" />
+</LinearLayout>
