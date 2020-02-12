@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             }
         } else {
             Toast toast = Toast.makeText(getApplicationContext(), "Invalid Website", Toast.LENGTH_SHORT);
+            toast.show();
         }
 
     }
@@ -61,5 +62,6 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             return false;
         }
+
     }
 }

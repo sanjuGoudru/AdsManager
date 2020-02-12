@@ -19,14 +19,14 @@ public class AdIntrestedPerson implements Serializable{
     private int maxAge;
     private int[] strategiesTried;
     private int triedReferalCampaign;
-    private int avgConversionRate;
+    private double avgConversionRate;
     private int[] intrestedPlatforms;
     private int trialBudget;
 
     public AdIntrestedPerson(int bussinessType, int[] locations,
                              String website, int gender, int minAge,
                              int maxAge, int[] strategiesTried,
-                             int triedReferalCampaign, int avgConversionRate,
+                             int triedReferalCampaign, double avgConversionRate,
                              int[] intrestedPlatforms, int trialBudget) {
         this.isSessionIDSet=false;
         this.bussinessType = bussinessType;
@@ -49,7 +49,7 @@ public class AdIntrestedPerson implements Serializable{
     public AdIntrestedPerson(int sessionID, int bussinessType,
                              int[] locations, String website,
                              int gender, int minAge, int maxAge, int[] strategiesTried,
-                             int triedReferalCampaign, int avgConversionRate,
+                             int triedReferalCampaign, double avgConversionRate,
                              int[] intrestedPlatforms, int trialBudget) {
         this.isSessionIDSet=true;
         this.sessionID = sessionID;
@@ -75,7 +75,7 @@ public class AdIntrestedPerson implements Serializable{
     }
 
     public void setStage2(int gender,int minAge,int maxAge
-            ,int[] strategiesTried,int triedReferalCampaign) {
+            ,int[] strategiesTried,int triedReferalCampaign,double avgConversionRate) {
         this.gender = gender;
         this.minAge = minAge;
         this.maxAge = maxAge;
@@ -89,4 +89,51 @@ public class AdIntrestedPerson implements Serializable{
         this.trialBudget = trialBudget;
     }
 
+    public int getSessionID() {
+        return sessionID;
+    }
+
+    public int getBussinessType() {
+        return bussinessType;
+    }
+
+    public int[] getLocations() {
+        return locations;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public int getGender() {
+        return gender;
+    }
+
+    public int getMinAge() {
+        return minAge;
+    }
+
+    public int getMaxAge() {
+        return maxAge;
+    }
+
+    public int[] getStrategiesTried() {
+        return strategiesTried;
+    }
+
+    public int getTriedReferalCampaign() {
+        return triedReferalCampaign;
+    }
+
+    public double getAvgConversionRate() {
+        return avgConversionRate;
+    }
+
+    public int[] getIntrestedPlatforms() {
+        return intrestedPlatforms;
+    }
+
+    public int getTrialBudget() {
+        return trialBudget;
+    }
 }
